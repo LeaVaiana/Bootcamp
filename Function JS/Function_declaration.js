@@ -95,3 +95,11 @@ sayHi() //"CIAO"
 //adesso decido che la funzione = 34
 sayHi=34
 //con la Function expression posso riassegnare un valore
+
+//scrivi il quadrato dei primi 15i numeri interi e una scritta alla fine dell'elaborazione
+
+function square (){
+  for (i=1; i<=15; i++)
+  document.write(i*i + "br");
+  document.write("END");
+}
