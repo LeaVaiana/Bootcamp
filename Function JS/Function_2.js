@@ -29,3 +29,10 @@ function isEven(num){
     return result; //ottengo il risultato della variabile
   }
 
+  //Replace a spcific character in a string: replace function
+  //ex: replace all "-" with "_" and return string
+  function replaceCharacter(str) {
+      var newString = str.replace(/-/g , "_");
+  return newString;
+  }
+
