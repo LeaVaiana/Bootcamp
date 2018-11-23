@@ -35,3 +35,18 @@ num +=1;//9
 doMath()//true
 
 //num +=1 mi chiede di fare 8+1, doMath, parte dal 9 (non dall'8) e mi chiede di fare (9 + 1)/5, quindi true
+
+
+// date due funzioni, con var name dentro la prima delle due, al chiamare le due funzioni
+//solo la prima ci ritornerá il valore della variabile perchè var name è solo accessibile nello scope della prima funzione
+
+function ciao(){
+    var name = "Lea";
+    console.log(name)
+}
+function arrivederci(){
+    console.log(name) //var name non è accessibile da questa seconda funzione
+}
+
+ciao()// Lea
+arrivederci// undefined
